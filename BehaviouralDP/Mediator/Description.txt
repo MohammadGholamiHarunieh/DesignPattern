@@ -1,0 +1,20 @@
+﻿The Mediator Pattern is a behavioral design pattern that defines an object (the mediator) that centralizes communication between a set of objects (colleagues) within a system. Instead of objects communicating directly with each other, they communicate through the mediator. This helps reduce the dependencies between individual objects and promotes a more loosely coupled and modular design.
+
+Key components of the Mediator Pattern:
+
+Mediator:
+
+Defines the interface for communication between colleagues.
+Maintains references to colleagues and facilitates communication between them.
+ConcreteMediator:
+
+Implements the Mediator interface and manages the communication between colleagues.
+Keeps track of the colleagues and routes messages between them.
+Colleague:
+
+Defines the interface for communication with the mediator.
+Maintains a reference to the mediator.
+ConcreteColleague:
+
+Implements the Colleague interface and communicates with the mediator when it needs to interact with other colleagues.
+Has a reference to the mediator.

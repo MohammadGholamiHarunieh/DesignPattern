@@ -1,0 +1,17 @@
+﻿The Memento Pattern is a behavioral design pattern that provides a mechanism for capturing and externalizing an object's internal state so that the object can be restored to this state later. It allows you to implement undo mechanisms, versioning, or checkpoints by saving the internal state of an object without exposing its details.
+
+Key components of the Memento Pattern:
+
+Originator:
+
+Represents the object whose state needs to be saved.
+Creates and uses a memento to capture its internal state.
+Can restore its internal state from a memento.
+Memento:
+
+Represents the snapshot of the internal state of the originator.
+May provide methods for retrieving and setting the state it represents.
+Caretaker:
+
+Holds and manages the mementos.
+Does not manipulate the contents of the mementos but can request the originator to restore its state from a memento.

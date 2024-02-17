@@ -1,0 +1,20 @@
+﻿The Flyweight Pattern is a structural design pattern that aims to minimize memory usage or computational expenses by sharing as much as possible with related objects. It is particularly useful in situations where a large number of similar objects need to be created, and their shared state can be externalized, resulting in reduced memory usage and improved performance.
+
+Key components of the Flyweight Pattern:
+
+Flyweight:
+
+Declares an interface through which flyweights can receive and act on extrinsic (shared) state.
+ConcreteFlyweight:
+
+Implements the Flyweight interface and stores intrinsic (unique) state. Instances of concrete flyweights are shared and reused when their intrinsic state is the same.
+UnsharedConcreteFlyweight:
+
+Optionally, some flyweights may have unshared state. These flyweights are not shared and can have a unique state for each instance.
+FlyweightFactory:
+
+Manages a pool of flyweight objects and ensures their sharing.
+Clients can request a flyweight from the factory, and the factory either returns an existing flyweight or creates a new one if it doesn't exist.
+Client:
+
+Maintains the extrinsic state (state that is not stored within the flyweight) of the flyweights and collaborates with the flyweights through the flyweight interface.

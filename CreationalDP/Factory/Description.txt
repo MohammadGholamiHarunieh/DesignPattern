@@ -1,0 +1,6 @@
+﻿The Abstract Factory pattern is another creational design pattern that provides an interface for creating families of related or dependent objects 
+without specifying their concrete classes. It is often used when you need to ensure that the created objects work together seamlessly and belong to 
+the same family of products.
+
+
+The Factory Method pattern is a creational design pattern that provides an interface for creating instances of a class, but allows subclasses to alter the type of instances that will be created. In other words, it defines an interface for creating objects, but the actual instantiation is left to the derived classes.

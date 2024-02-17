@@ -1,0 +1,16 @@
+﻿The Decorator Pattern is a structural design pattern that allows behavior to be added to an individual object, either statically or dynamically, without affecting the behavior of other objects from the same class. It is a way to extend the functionalities of classes in a flexible and reusable manner.
+
+Key components of the Decorator Pattern:
+
+Component:
+
+Defines the interface for objects that can have responsibilities added to them dynamically.
+Concrete Component:
+
+Implements the Component interface and provides the baseline behavior.
+Decorator:
+
+Maintains a reference to a Component object and conforms to the Component interface. It has an association with the Component and can add or override its behavior.
+Concrete Decorator:
+
+Extends the behavior of the Decorator and adds specific responsibilities or modifications.

@@ -1,0 +1,17 @@
+﻿The Facade Pattern is a structural design pattern that provides a simplified interface to a set of interfaces in a subsystem, making it easier to use and reducing the complexity for clients. It involves creating a higher-level interface that hides the complexities of the subsystem and provides a single entry point for interacting with it.
+
+Key components of the Facade Pattern:
+
+Facade:
+
+Defines a higher-level interface that makes the subsystem easier to use.
+Manages the interactions between clients and the components of the subsystem.
+Does not encapsulate the entire subsystem but provides a simplified interface to specific functionality.
+Subsystem:
+
+Consists of a set of classes or components that perform specific tasks.
+Represents the lower-level functionality and complexity that is hidden from clients by the facade.
+Client:
+
+Interacts with the facade to access the subsystem's functionality without needing to understand its internal details.
+Clients are shielded from the complexity of the subsystem.

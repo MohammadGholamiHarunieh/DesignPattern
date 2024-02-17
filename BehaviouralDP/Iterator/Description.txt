@@ -1,0 +1,22 @@
+﻿The Iterator Pattern is a behavioral design pattern that provides a way to access elements of an aggregate object sequentially without exposing its underlying representation. It allows clients to traverse the elements of a collection (or aggregate) without needing to know the internal structure of that collection.
+
+Key components of the Iterator Pattern:
+
+Iterator:
+
+Declares the interface for accessing and traversing elements in the collection.
+Usually, includes methods such as First, Next, IsDone, and Current.
+ConcreteIterator:
+
+Implements the Iterator interface and keeps track of the current position in the traversal.
+Aggregate:
+
+Defines the interface for creating an iterator object.
+Typically includes a method to retrieve an iterator.
+ConcreteAggregate:
+
+Implements the Aggregate interface and provides an implementation for creating an iterator.
+Represents the collection of objects being iterated.
+Client:
+
+Uses the iterator to traverse the elements of the collection without knowing its internal structure.

@@ -1,0 +1,43 @@
+﻿In object-oriented programming, the command pattern is a behavioral design pattern in which an object is used to
+encapsulate all information needed to perform an action or trigger an event at a later time.
+
+The Command Pattern is a behavioral design pattern that turns a request into a stand-alone object. This object contains all the information about the request, allowing for parameterization of clients with different requests, queuing of requests, and logging of the requests. It also enables support for undoable operations.
+
+Key components of the Command Pattern:
+
+Command:
+
+Declares an interface for executing a particular operation.
+Typically includes an Execute method.
+ConcreteCommand:
+
+Implements the Command interface and binds a specific operation to a receiver.
+Contains the information about the operation to be executed.
+Client:
+
+Requests a command to be executed.
+Creates and configures commands.
+Invoker:
+
+Asks the command to execute the request.
+Receiver:
+
+Knows how to perform the operation.
+
+
+How to Implement
+Declare the command interface with a single execution method.
+
+Start extracting requests into concrete command classes that implement the command interface. Each class must have a set of fields for storing the request arguments along with a reference to the actual receiver object. All these values must be initialized via the command’s constructor.
+
+Identify classes that will act as senders. Add the fields for storing commands into these classes. Senders should communicate with their commands only via the command interface. Senders usually don’t create command objects on their own, but rather get them from the client code.
+
+Change the senders so they execute the command instead of sending a request to the receiver directly.
+
+The client should initialize objects in the following order:
+
+Create receivers.
+Create commands, and associate them with receivers if needed.
+Create senders, and associate them with specific commands.
+
+

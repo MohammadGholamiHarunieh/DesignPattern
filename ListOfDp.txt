@@ -1,0 +1,10 @@
+Categories of Design Patterns:
+
+Creational Patterns: Concerned with object creation mechanisms, providing ways to instantiate objects in a manner suitable to the situation.
+Examples: Singleton, Factory Method, Abstract Factory, Builder, Prototype.
+
+Structural Patterns: Focus on the composition of classes and objects, helping to form larger structures and simplify the relationships between different components.
+Examples: Adapter, Bridge, Composite, Decorator, Facade, Flyweight, Proxy.
+
+Behavioral Patterns: Deal with the interaction and responsibility of objects, defining patterns for communication between them.
+Examples: Observer, Strategy, Command, State, Chain of Responsibility, Iterator, Mediator, Memento, Template Method, Visitor
